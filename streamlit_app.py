@@ -271,29 +271,29 @@ st.bar_chart(turnover_df.set_index("state")[["avg_total_turnover", "avg_rn_turno
 # ---------------------------------------------------------------------------
 # Q2 and Q4: NOT reliably calculable with this data -- shown transparently.
 # ---------------------------------------------------------------------------
-st.header("Data limitations (Q2 and Q4)")
+# st.header("Data limitations (Q2 and Q4)")
 
-st.warning(
-    "**Q2 (highest overtime hours) cannot be directly answered.** The PBJ "
-    "file reports total hours per facility per day, not per employee or "
-    "per shift -- there is no way to distinguish a single nurse's overtime "
-    "hours from ordinary hours split across multiple staff."
-)
+# st.warning(
+#     "**Q2 (highest overtime hours) cannot be directly answered.** The PBJ "
+#     "file reports total hours per facility per day, not per employee or "
+#     "per shift -- there is no way to distinguish a single nurse's overtime "
+#     "hours from ordinary hours split across multiple staff."
+# )
 
-st.error(
-    "**Q4 (length of stay trends) cannot be answered at all.** No field "
-    "across any of the 19 available files records a resident's length of "
-    "stay or admission/discharge dates. The census trend chart above is "
-    "the closest available substitute -- it shows occupancy patterns over "
-    "time, not a length-of-stay measure."
-)
+# st.error(
+#     "**Q4 (length of stay trends) cannot be answered at all.** No field "
+#     "across any of the 19 available files records a resident's length of "
+#     "stay or admission/discharge dates. The census trend chart above is "
+#     "the closest available substitute -- it shows occupancy patterns over "
+#     "time, not a length-of-stay measure."
+# )
 
-st.info(
-    "**Entire Cost Metrics category (payroll, cost per stay, overtime cost "
-    "%, revenue vs. payroll) is not calculable.** No wage, billing, or "
-    "revenue data exists in any of the 19 files.\n\n"
-    "**Department-level breakdowns are impossible everywhere requested** -- "
-    "PBJ has no unit/ward/department field.\n\n"
-    "See metrics_feasibility_audit.md for the full metric-by-metric "
-    "reasoning across all 22 requested metrics."
-)
+# st.info(
+#     "**Entire Cost Metrics category (payroll, cost per stay, overtime cost "
+#     "%, revenue vs. payroll) is not calculable.** No wage, billing, or "
+#     "revenue data exists in any of the 19 files.\n\n"
+#     "**Department-level breakdowns are impossible everywhere requested** -- "
+#     "PBJ has no unit/ward/department field.\n\n"
+#     "See metrics_feasibility_audit.md for the full metric-by-metric "
+#     "reasoning across all 22 requested metrics."
+# )

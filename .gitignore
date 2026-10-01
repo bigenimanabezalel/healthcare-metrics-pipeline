@@ -1,0 +1,8 @@
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.venv/
+data/
+eda_output/
+*.csv
+*.parquet
